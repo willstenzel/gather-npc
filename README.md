@@ -1,6 +1,8 @@
 ## Customizable Chat Interface for NPCs in Gather
 
-This project introduces an embeddable chat interface that enables synchronized communication between players and NPCs in Gather spaces. It uses OpenAI's API for advanced conversational capabilities and Firebase's Firestore for real-time data synchronization. The chat interface opens up opportunities for new types of experiences in Gather like interactive storytelling, educational simulations, and collaborative games.
+This project introduces an embeddable chat interface that enables synchronized communication between players and NPCs in Gather spaces. It uses OpenAI's API for advanced conversational capabilities and Firebase's Firestore for real-time data synchronization. The goal of building this interface is to open up opportunities for new types of experiences in Gather like interactive storytelling, educational simulations, and collaborative games.
+
+![npc-demo](https://raw.githubusercontent.com/willstenzel/gather-npc/include-gifs/npc-demo.gif)
 
 ## Prerequisites
 
@@ -31,11 +33,7 @@ yarn install
 ```
 
 <b>2. Setup Firebase projects and create Firestore</b><br/>
-To get this code up and running, you'll need a Firestore database with a schema of collections and documents that like this: `/quests/test-quest/rooms/chapter-1` (see below for example). Don't worry about populating the data inside the `chapter-1` document for now.
-
-<details>
-    <summary>Show Firestore Setup</summary>
-</details></br>
+To get this code up and running, you'll need a Firestore database with a schema of collections and documents that like this: `/quests/test-quest/rooms/chapter-1` (see below for example). Don't worry about populating the data inside the `chapter-1` document for now. Click [here](https://raw.githubusercontent.com/willstenzel/gather-npc/include-gifs/firestore-schema.gif) to see how it will eventually look.
 
 <b>3. Add base credentials to `initFirebaseClient.ts` file</b><br/>
 Additional info can be found [here](https://firebase.google.com/docs/web/learn-more#config-object)
